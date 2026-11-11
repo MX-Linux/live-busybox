@@ -1,3 +1,14 @@
+live-busybox (1.38.0-3mx2) mx; urgency=medium
+
+  * Enable the busybox runit applets, requested for antiX: chpst,
+    setuidgid, envuidgid, envdir, softlimit, runsv, runsvdir (with
+    FEATURE_RUNSVDIR_LOG), sv, svc, svok, svlogd.
+  * SV_DEFAULT_SERVICE_DIR="/etc/service", as used by the runit of
+    Debian and antiX (SVDIR still overrides it).
+  * debian/gbp.conf, debian/source/options: git setup (README.md).
+
+ -- fehlix <fehlix@mxlinux.org>  Wed, 11 Nov 2026 06:36:31 -0500
+
 live-busybox (1.38.0-3mx1) mx; urgency=medium
 
   * New package: static busybox for the MX/antiX live-initrd, built from
